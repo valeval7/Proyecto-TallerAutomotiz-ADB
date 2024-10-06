@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Presentacion_TallerAutomotiz.exe.config
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Presentacion_TallerAutomotiz.exe
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Presentacion_TallerAutomotiz.pdb
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmMenu.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.Properties.Resources.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.exe
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.pdb
