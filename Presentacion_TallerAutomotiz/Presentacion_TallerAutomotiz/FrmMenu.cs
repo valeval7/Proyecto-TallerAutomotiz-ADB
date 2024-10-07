@@ -15,12 +15,37 @@ namespace Presentacion_TallerAutomotiz
         public FrmMenu()
         {
             InitializeComponent();
-
+            groupBox1.Visible = true;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnRefacciones_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+            FrmLogin LOG = new FrmLogin();
+            LOG.MdiParent = this;
+            LOG.Show();
+
+        }
+
+        private void btnHerramientas_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+            FrmLogin LOG = new FrmLogin();
+            LOG.MdiParent = this;
+            LOG.Show();
+        }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+            FrmLogin LOG = new FrmLogin();
+            LOG.MdiParent = this;
+            LOG.Show();
         }
     }
 }

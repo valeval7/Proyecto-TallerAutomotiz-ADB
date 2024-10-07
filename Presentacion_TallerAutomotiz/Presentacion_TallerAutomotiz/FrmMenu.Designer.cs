@@ -30,15 +30,15 @@
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.txtInfo = new System.Windows.Forms.ToolStripTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRefacciones = new System.Windows.Forms.ToolStripButton();
             this.btnHerramientas = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
-            this.btnAdministrar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnAdministrar = new System.Windows.Forms.ToolStripButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +69,61 @@
             this.txtInfo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.ReadOnly = true;
-            this.txtInfo.Size = new System.Drawing.Size(264, 39);
+            this.txtInfo.Size = new System.Drawing.Size(293, 39);
+            // 
+            // btnRefacciones
+            // 
+            this.btnRefacciones.AutoSize = false;
+            this.btnRefacciones.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._2;
+            this.btnRefacciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRefacciones.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRefacciones.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRefacciones.Name = "btnRefacciones";
+            this.btnRefacciones.Size = new System.Drawing.Size(250, 120);
+            this.btnRefacciones.Text = "REFACCIONES";
+            this.btnRefacciones.Click += new System.EventHandler(this.btnRefacciones_Click);
+            // 
+            // btnHerramientas
+            // 
+            this.btnHerramientas.AutoSize = false;
+            this.btnHerramientas.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._1;
+            this.btnHerramientas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHerramientas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnHerramientas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnHerramientas.Name = "btnHerramientas";
+            this.btnHerramientas.Size = new System.Drawing.Size(250, 120);
+            this.btnHerramientas.Text = "HERRAMIENTAS";
+            this.btnHerramientas.Click += new System.EventHandler(this.btnHerramientas_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.AutoSize = false;
+            this.btnSalir.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.ICONOS__HORIZONTALES_VMG;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(250, 120);
+            this.btnSalir.Text = "ABANDONAR SISTEMA";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.AutoSize = false;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(300, 250);
+            // 
+            // btnAdministrar
+            // 
+            this.btnAdministrar.AutoSize = false;
+            this.btnAdministrar.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._3;
+            this.btnAdministrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdministrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAdministrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdministrar.Name = "btnAdministrar";
+            this.btnAdministrar.Size = new System.Drawing.Size(250, 120);
+            this.btnAdministrar.Text = "ADMINISTRAR USUARIOS";
+            this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
             // 
             // groupBox1
             // 
@@ -86,68 +140,15 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // pictureBox1
+            // label2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._231;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-600, 29);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(3200, 3200);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(2500, 1400);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnRefacciones
-            // 
-            this.btnRefacciones.AutoSize = false;
-            this.btnRefacciones.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._2;
-            this.btnRefacciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRefacciones.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnRefacciones.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRefacciones.Name = "btnRefacciones";
-            this.btnRefacciones.Size = new System.Drawing.Size(250, 120);
-            this.btnRefacciones.Text = "REFACCIONES";
-            // 
-            // btnHerramientas
-            // 
-            this.btnHerramientas.AutoSize = false;
-            this.btnHerramientas.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._1;
-            this.btnHerramientas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHerramientas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnHerramientas.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHerramientas.Name = "btnHerramientas";
-            this.btnHerramientas.Size = new System.Drawing.Size(250, 120);
-            this.btnHerramientas.Text = "HERRAMIENTAS";
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.AutoSize = false;
-            this.btnSalir.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.ICONOS__HORIZONTALES_VMG;
-            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(250, 120);
-            this.btnSalir.Text = "ABANDONAR SISTEMA";
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnAdministrar
-            // 
-            this.btnAdministrar.AutoSize = false;
-            this.btnAdministrar.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._3;
-            this.btnAdministrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdministrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAdministrar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdministrar.Name = "btnAdministrar";
-            this.btnAdministrar.Size = new System.Drawing.Size(250, 120);
-            this.btnAdministrar.Text = "ADMINISTRAR USUARIOS";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.AutoSize = false;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(300, 250);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(200, 1500);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1578, 50);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Por medio de los botones a la izquierda, seleccione la acción deseada.";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
@@ -159,15 +160,17 @@
             this.label1.Text = "TALLER AUTOMOTRIZ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(200, 1500);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1578, 50);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Por medio de los botones a la izquierda, seleccione la acción deseada.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._231;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(-600, 29);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(3200, 3200);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(2500, 1400);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmMenu
             // 

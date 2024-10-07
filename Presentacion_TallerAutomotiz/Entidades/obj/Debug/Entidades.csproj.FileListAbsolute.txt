@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Entidades\bin\Debug\Entidades.dll
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Entidades\bin\Debug\Entidades.pdb
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Entidades\obj\Debug\Entidades.dll
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Entidades\obj\Debug\Entidades.pdb

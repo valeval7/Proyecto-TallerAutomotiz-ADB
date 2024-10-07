@@ -8,3 +8,15 @@ C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz
 C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.exe
 C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.pdb
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Entidades.dll
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Manejador.dll
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Entidades.pdb
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\bin\Debug\Manejador.pdb
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmLogin.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presenta.36A62E86.Up2Date
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmAgregarUsuarios.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmHerramientas.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmRefacciones.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmUsuarios.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmAgregarHerramientas.resources
+C:\Users\user\Desktop\Proyecto-Taller Automotiz-ADB\Presentacion_TallerAutomotiz\Presentacion_TallerAutomotiz\obj\Debug\Presentacion_TallerAutomotiz.FrmAgregarRefacciones.resources
