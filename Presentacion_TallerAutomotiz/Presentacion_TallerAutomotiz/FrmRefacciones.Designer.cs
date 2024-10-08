@@ -207,6 +207,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._29;
@@ -227,9 +229,13 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(310, 100);
+            this.MaximumSize = new System.Drawing.Size(1920, 1200);
+            this.MinimumSize = new System.Drawing.Size(1920, 1200);
             this.Name = "FrmRefacciones";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmRefacciones";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

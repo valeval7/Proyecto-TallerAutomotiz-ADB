@@ -32,14 +32,14 @@
             this.dtgvAdministrador = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblEliminar = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblModificar = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,10 +64,12 @@
             this.dtgvAdministrador.Location = new System.Drawing.Point(85, 299);
             this.dtgvAdministrador.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtgvAdministrador.Name = "dtgvAdministrador";
+            this.dtgvAdministrador.ReadOnly = true;
             this.dtgvAdministrador.RowHeadersWidth = 82;
             this.dtgvAdministrador.RowTemplate.Height = 33;
             this.dtgvAdministrador.Size = new System.Drawing.Size(1751, 535);
             this.dtgvAdministrador.TabIndex = 27;
+            this.dtgvAdministrador.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvAdministrador_CellEnter);
             // 
             // txtBuscar
             // 
@@ -77,6 +79,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(708, 54);
             this.txtBuscar.TabIndex = 25;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label1
             // 
@@ -91,18 +94,18 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "USUARIOS:";
             // 
-            // label6
+            // lblEliminar
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(156)))), ((int)(((byte)(181)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(1503, 194);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 28);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "ELIMINAR";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(156)))), ((int)(((byte)(181)))));
+            this.lblEliminar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
+            this.lblEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblEliminar.Location = new System.Drawing.Point(1503, 194);
+            this.lblEliminar.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblEliminar.Name = "lblEliminar";
+            this.lblEliminar.Size = new System.Drawing.Size(137, 28);
+            this.lblEliminar.TabIndex = 28;
+            this.lblEliminar.Text = "ELIMINAR";
+            this.lblEliminar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnEliminar
             // 
@@ -115,19 +118,20 @@
             this.btnEliminar.Size = new System.Drawing.Size(137, 124);
             this.btnEliminar.TabIndex = 34;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // label3
+            // lblModificar
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(156)))), ((int)(((byte)(181)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1349, 194);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 28);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "MODIFICAR";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(156)))), ((int)(((byte)(181)))));
+            this.lblModificar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
+            this.lblModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblModificar.Location = new System.Drawing.Point(1349, 194);
+            this.lblModificar.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblModificar.Name = "lblModificar";
+            this.lblModificar.Size = new System.Drawing.Size(146, 28);
+            this.lblModificar.TabIndex = 29;
+            this.lblModificar.Text = "MODIFICAR";
+            this.lblModificar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnModificar
             // 
@@ -140,6 +144,7 @@
             this.btnModificar.Size = new System.Drawing.Size(137, 124);
             this.btnModificar.TabIndex = 32;
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label5
             // 
@@ -154,17 +159,18 @@
             this.label5.Text = "AGREGAR";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button3
+            // btnAgregar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.MAS;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(1200, 65);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 124);
-            this.button3.TabIndex = 33;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.MAS;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.Location = new System.Drawing.Point(1200, 65);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(137, 124);
+            this.btnAgregar.TabIndex = 33;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label4
             // 
@@ -177,43 +183,50 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "CANCELAR";
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.CANCELAR2;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(1701, 66);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 124);
-            this.button2.TabIndex = 35;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancelar.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.CANCELAR2;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar.Location = new System.Drawing.Point(1701, 66);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(137, 124);
+            this.btnCancelar.TabIndex = 35;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FrmUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._28;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1894, 1129);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(1920, 1200);
+            this.Controls.Add(this.lblEliminar);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblModificar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dtgvAdministrador);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(310, 100);
+            this.MaximumSize = new System.Drawing.Size(1920, 1200);
+            this.MinimumSize = new System.Drawing.Size(1920, 1200);
             this.Name = "FrmUsuarios";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmUsuarios";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,13 +238,13 @@
         private System.Windows.Forms.DataGridView dtgvAdministrador;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblEliminar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblModificar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

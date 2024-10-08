@@ -208,6 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources.TBD_PROYECTO_FINAL_YJGSVMG;
@@ -229,9 +230,13 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(310, 100);
+            this.MaximumSize = new System.Drawing.Size(1920, 1200);
+            this.MinimumSize = new System.Drawing.Size(1920, 1200);
             this.Name = "FrmHerramientas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmHerramientas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

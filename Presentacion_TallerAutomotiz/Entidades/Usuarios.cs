@@ -15,6 +15,7 @@ namespace Entidades
             ApellidoMaterno = apellidoMaterno;
             FechaNacimiento = fechaNacimiento;
             RFC = rfc;
+
         }
         public string Nombre { get; set; }
         public string ApellidoPaterno { get; set; }
