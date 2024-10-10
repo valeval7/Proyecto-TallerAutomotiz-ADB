@@ -23,7 +23,7 @@ namespace Manejador
             {
                 Tipo = dt.Rows[0]["tipo"].ToString();
                 Formulario = dt.Rows[0]["formulario"].ToString();
-                return dt.Rows[0]["formulario"].ToString();
+                return dt.Rows[0]["rs"].ToString();
             }
             else
             {

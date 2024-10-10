@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{331E33C2-1B1E-47BD-9BF3-7D509CA2DC62}|Entidades\\Entidades.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{331E33C2-1B1E-47BD-9BF3-7D509CA2DC62}|Entidades\\Entidades.csproj|solutionrelative:entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmagregarherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmagregarherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmagregarherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmagregarherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC35B2B9-0F4C-4F31-ABA5-5DE2B1123D7F}|Manejador\\Manejador.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\manejador\\manejadorherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC35B2B9-0F4C-4F31-ABA5-5DE2B1123D7F}|Manejador\\Manejador.csproj|solutionrelative:manejador\\manejadorherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AC35B2B9-0F4C-4F31-ABA5-5DE2B1123D7F}|Manejador\\Manejador.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\manejador\\manejadorrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC35B2B9-0F4C-4F31-ABA5-5DE2B1123D7F}|Manejador\\Manejador.csproj|solutionrelative:manejador\\manejadorrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmagregarrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmagregarrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmrefacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmherramientas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmagregarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmagregarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|c:\\users\\user\\desktop\\proyecto-taller automotiz-adb\\presentacion_tallerautomotiz\\presentacion_tallerautomotiz\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089AB5F6-4C4D-4101-80D9-360CE09753EF}|Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz.csproj|solutionrelative:presentacion_tallerautomotiz\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +50,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmAgregarRefacciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarRefacciones.cs",
+              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmAgregarRefacciones.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarRefacciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmAgregarRefacciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T05:32:56.287Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManejadorHerramientas.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Manejador\\ManejadorHerramientas.cs",
+              "RelativeDocumentMoniker": "Manejador\\ManejadorHerramientas.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Manejador\\ManejadorHerramientas.cs",
+              "RelativeToolTip": "Manejador\\ManejadorHerramientas.cs",
+              "ViewState": "AQIAAAUAAADYzMzMzEwswCIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T05:32:19.775Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmMenu.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmMenu.cs",
-              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmMenu.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmMenu.cs",
-              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmMenu.cs",
-              "ViewState": "AQIAABEAAABA//////8owCwAAAANAAAA",
+              "DocumentIndex": 3,
+              "Title": "ManejadorRefacciones.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Manejador\\ManejadorRefacciones.cs",
+              "RelativeDocumentMoniker": "Manejador\\ManejadorRefacciones.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Manejador\\ManejadorRefacciones.cs",
+              "RelativeToolTip": "Manejador\\ManejadorRefacciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T02:40:39.358Z",
+              "WhenOpened": "2024-10-10T05:32:20.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Entidades\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Entidades\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Entidades\\Usuarios.cs",
-              "RelativeToolTip": "Entidades\\Usuarios.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "FrmAgregarHerramientas.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs",
+              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs",
+              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs",
+              "ViewState": "AQIAAB4AAABAZmZmZgYywBoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T00:37:01.614Z",
+              "WhenOpened": "2024-10-10T05:31:32.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "FrmAgregarHerramientas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs",
+              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmAgregarHerramientas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T05:31:21.32Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FrmUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmUsuarios.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmUsuarios.cs",
               "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmUsuarios.cs",
-              "ViewState": "AQIAAAsAAACA/////z8lwBsAAAAuAAAA",
+              "ViewState": "AQIAAC4AAADAmJmZmZklwFIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T00:34:45.542Z",
+              "WhenOpened": "2024-10-10T05:31:09.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FrmUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmUsuarios.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmUsuarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T00:34:19.084Z",
+              "WhenOpened": "2024-10-10T05:31:08.278Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmAgregarUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarUsuarios.cs",
-              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmAgregarUsuarios.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmAgregarUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmAgregarUsuarios.cs [Dise\u00F1o]",
+              "DocumentIndex": 8,
+              "Title": "FrmHerramientas.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmHerramientas.cs",
+              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmHerramientas.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmHerramientas.cs",
+              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmHerramientas.cs",
+              "ViewState": "AQIAACwAAAAAnZmZmZkTwD8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T23:51:47.184Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-10T05:30:39.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FrmHerramientas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmHerramientas.cs",
               "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmHerramientas.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmHerramientas.cs [Dise\u00F1o]",
               "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmHerramientas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T23:51:43.496Z",
+              "WhenOpened": "2024-10-10T05:30:34.838Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmLogin.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmLogin.cs",
-              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmLogin.cs",
-              "ViewState": "AQIAAA0AAAA8mZmZmVk4wBQAAAAmAAAA",
+              "DocumentIndex": 7,
+              "Title": "FrmRefacciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmRefacciones.cs",
+              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmRefacciones.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmRefacciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmRefacciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T23:50:14.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "Presentacion_TallerAutomotiz\\FrmLogin.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto-Taller Automotiz-ADB\\Presentacion_TallerAutomotiz\\Presentacion_TallerAutomotiz\\FrmLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion_TallerAutomotiz\\FrmLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T23:50:12.422Z",
+              "WhenOpened": "2024-10-10T05:30:31.588Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

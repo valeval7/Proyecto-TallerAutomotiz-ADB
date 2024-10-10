@@ -25,23 +25,24 @@ namespace Presentacion_TallerAutomotiz
             Application.Exit();
         }
 
+
         public void btnRefacciones_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = false;
             FrmLogin LOG = new FrmLogin();
-            while (true)  
+            
+
+            LOG.ShowDialog();
+            if (LOG.Formulario.Equals("Refacciones") || LOG.Formulario.Equals("Refacciones y Herramientas") || LOG.Formulario.Equals("Administrador"))
             {
-                LOG.ShowDialog();
-                if (LOG.Formulario.Equals("REFACCIONES") || LOG.Formulario.Equals("REFACCIONES Y HERRAMIENTAS") || LOG.Formulario.Equals("ADMINISTRADOR"))
-                {
-                    FrmRefacciones a = new FrmRefacciones();
-                    a.Show();
-                    break; 
-                }
-                else
-                {
-                    MessageBox.Show("Incorrecto, inténtelo de nuevo.");
-                }
+                FrmRefacciones a = new FrmRefacciones();
+                a.Show();
+            }
+            else
+            {
+                MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
+                LOG.Close();
+                this.Show();
             }
         }
 
@@ -49,39 +50,38 @@ namespace Presentacion_TallerAutomotiz
         {
             groupBox1.Visible = false;
             FrmLogin LOG = new FrmLogin();
-            while (true)
+            LOG.ShowDialog();
+            if (LOG.Formulario.Equals("Herramientas") || LOG.Formulario.Equals("Refacciones y Herramientas") || LOG.Formulario.Equals("Administrador"))
             {
-                LOG.ShowDialog();
-                if (LOG.Formulario.Equals("HERRAMIENTAS") || LOG.Formulario.Equals("REFACCIONES Y HERRAMIENTAS") || LOG.Formulario.Equals("ADMINISTRADOR"))
-                {
-                    FrmHerramientas a = new FrmHerramientas();
-                    a.Show();
-                    break;
-                }
-                else
-                {
-                    MessageBox.Show("Incorrecto, inténtelo de nuevo.");
-                }
-            }   
+                FrmHerramientas a = new FrmHerramientas();
+                a.Show();
+                LOG.Close();
+            }
+            else
+            {
+                MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
+                LOG.Close();
+                this.Show();
+
+            }
         }
 
         private void btnAdministrar_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = false;
             FrmLogin LOG = new FrmLogin();
-            while (true)
+            LOG.ShowDialog();
+
+            if (LOG.Formulario.Equals("Administrador"))
             {
-                LOG.ShowDialog();
-                if (LOG.Formulario.Equals("ADMINISTRADOR"))
-                {
-                    FrmUsuarios a = new FrmUsuarios();
-                    a.Show();
-                    break;
-                }
-                else
-                {
-                    MessageBox.Show("Incorrecto, inténtelo de nuevo.");
-                }
+                FrmUsuarios a = new FrmUsuarios();
+                a.Show();
+            }
+            else 
+            {
+                MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
+                LOG.Close();
+                this.Show();
             }
         }
     }
