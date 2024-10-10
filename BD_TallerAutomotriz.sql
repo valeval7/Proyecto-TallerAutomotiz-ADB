@@ -2,7 +2,8 @@ CREATE DATABASE BD_TallerAutomotriz;
 USE BD_TallerAutomotriz;
 
 CREATE TABLE Refacciones(
-CodigoBarras  VARCHAR(50) PRIMARY KEY NOT NULL,
+IdR INT PRIMARY KEY AUTO_INCREMENT,
+CodigoBarras  VARCHAR(50),
 Nombre VARCHAR(150),
 Descripcion VARCHAR(250),
 Marca VARCHAR(150),
@@ -11,7 +12,8 @@ Actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Herramientas(
-CodigoHerramienta VARCHAR(50) PRIMARY KEY NOT NULL, 
+IdH INT PRIMARY KEY AUTO_INCREMENT,
+CodigoHerramienta VARCHAR(50), 
 Nombre VARCHAR(150), 
 Medida VARCHAR(150), 
 Marca VARCHAR(150), 
@@ -33,7 +35,6 @@ Formulario ENUM('Refacciones','Herramientas', 'Refacciones y Herramientas', 'Adm
 Clave VARCHAR(255)
 );
 SELECT * FROM usuarios;
-
 
 INSERT INTO usuarios (IdUsuario, Nombre, apellidopaterno, apellidomaterno, fechanacimiento, rfc, NickName, Tipo, Formulario, Clave) 
 VALUES (NULL, 'Valeria','Macias', 'Gonzalez', '2004-05-07', 'MAGV0705NR5', 'vmg', 1, 4, SHA1('1234'));
@@ -70,7 +71,6 @@ BEGIN
 END;
 //
 
-
 DELIMITER //
 CREATE PROCEDURE p_ModificarUser
 (
@@ -97,14 +97,76 @@ BEGIN
   Tipo =_Tipo,
   Formulario = _Formulario,
   Clave = _Clave
-  WHERE IdProducto=_IdProducto;
+  WHERE _IdUsuario = IdUsuario;
+END;
+//
+
+
+DELIMITER //
+CREATE PROCEDURE p_ModificarHerramientas
+(
+	IN _IdH INT,
+	IN  _CodigoHerramienta VARCHAR(50), 
+	IN _Nombre VARCHAR(150), 
+	IN _Medida VARCHAR(150), 
+	IN _Marca VARCHAR(150), 
+ 	IN _Descripcion VARCHAR(250)
+)
+BEGIN 
+  UPDATE herramientas
+  SET
+  CodigoHerramienta = _CodigoHerramienta,
+  Nombre = _Nombre, 
+  Medida= _Medida,
+  Marca= _Marca,
+  Descripcion = _Descripcion
+  WHERE IdH = _idH;
 END;
 //
 
 
 
+DELIMITER //
+CREATE PROCEDURE p_EliminarHerramienta
+(
+   IN _IdH VARCHAR(50)
+)
+BEGIN
+   DELETE FROM herramientas WHERE idH=_IdH;
+END;
+//
 
 
 
+DELIMITER //
+CREATE PROCEDURE p_ModificarRefacciones
+(
+	IN _IdR INT,
+	IN  _CodigoBarras VARCHAR(50), 
+	IN _Nombre VARCHAR(150), 
+	IN _Descripcion VARCHAR(250),
+	IN _Marca VARCHAR(150)
+)
+BEGIN 
+  UPDATE Refacciones
+  SET
+  CodigoBarras = _CodigoBarras,
+  Nombre = _Nombre, 
+  descricion= _Medida,
+  marca= _Marca
+  WHERE IdR = _IdR;
+END;
+//
 
+
+
+DELIMITER //
+CREATE PROCEDURE p_EliminarRefacciones
+(
+   IN _CodigoBarras VARCHAR(50)
+)
+BEGIN
+   DELETE FROM Refacciones WHERE CodigoBarras=_CodigoBarras;
+END;
+//
 
