@@ -24,7 +24,6 @@ namespace Presentacion_TallerAutomotiz
                 txtNombre.Text = FrmRefacciones.Nombre;
                 txtDescripcion.Text = FrmRefacciones.Descripcion;
                 txtMarca.Text = FrmRefacciones.Marca;
-                FrmRefacciones.idR = 0;
             }
         }
 

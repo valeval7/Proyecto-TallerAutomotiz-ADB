@@ -90,11 +90,12 @@
             this.dtgvAdministrador.Location = new System.Drawing.Point(90, 354);
             this.dtgvAdministrador.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.dtgvAdministrador.Name = "dtgvAdministrador";
+            this.dtgvAdministrador.ReadOnly = true;
             this.dtgvAdministrador.RowHeadersWidth = 82;
             this.dtgvAdministrador.RowTemplate.Height = 33;
             this.dtgvAdministrador.Size = new System.Drawing.Size(1752, 536);
             this.dtgvAdministrador.TabIndex = 0;
-            this.dtgvAdministrador.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvAdministrador_CellClick);
+            this.dtgvAdministrador.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvAdministrador_CellEnter);
             // 
             // txtBuscar
             // 
@@ -221,7 +222,7 @@
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._29;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1954, 788);
+            this.ClientSize = new System.Drawing.Size(1920, 788);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblEliminar);
             this.Controls.Add(this.btnEliminar);

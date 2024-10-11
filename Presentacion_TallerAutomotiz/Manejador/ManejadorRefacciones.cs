@@ -35,16 +35,16 @@ namespace Manejador
         }
         public void Modificar(int IdR, TextBox codigoBarras, TextBox Nombre, TextBox descripcion, TextBox Marca)
         {
-            b.Comando($"CALL p_ModificarRefacciones({IdR},'{codigoBarras.Text}', '{Nombre.Text}', '{descripcion.Text}', '{Marca.Text}')");
+            b.Comando($"update refacciones set CodigoBarras='{codigoBarras.Text}', Nombre='{Nombre.Text}', Descripcion='{descripcion}', Marca= '{Marca}'where IdR={IdR}');");
             MessageBox.Show("Registro Modificado", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public void Eliminar(int idr, string Dato)
+        public void Eliminar(int Id, string Dato)
         {
             DialogResult rs = MessageBox.Show($"Está seguro de borrar {Dato}", "!Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (rs == DialogResult.Yes)
             {
-                b.Comando($"CALL p_EliminarRefacciones({idr})");
+                b.Comando($"CALL p_EliminarRefacciones({Id})");
                 MessageBox.Show("Registro Eliminado");
             }
         }

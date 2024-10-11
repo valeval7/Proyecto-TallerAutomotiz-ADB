@@ -34,7 +34,7 @@ namespace Manejador
         }
         public void Modificar(int idh, TextBox codigoherramientas, TextBox Nombre, TextBox medida, ComboBox Medida, TextBox Marca, TextBox Descripcion)
         {
-            b.Comando($"CALL p_ModificarHerramientas({idh},'{codigoherramientas.Text}', '{Nombre.Text}', '{medida.Text + " " + Medida.Text}', '{Marca.Text}', '{Descripcion.Text}')");
+            b.Comando($"CALL p_ModificarHerramientas({idh}, '{codigoherramientas.Text}', '{Nombre.Text}', '{medida.Text + " " + Medida.Text}',  '{Marca.Text}', '{Descripcion.Text}');");
             MessageBox.Show("Registro Modificado", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

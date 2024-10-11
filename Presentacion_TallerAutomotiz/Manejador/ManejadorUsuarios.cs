@@ -39,7 +39,7 @@ namespace Manejador
 
         public void Modificar(int Id, TextBox Nombre, TextBox ApellidoP, TextBox ApellidoM, DateTimePicker Nacimiento, TextBox RFC, TextBox NickName, ComboBox Tipo, ComboBox Formulario, TextBox Clave)
         {
-            b.Comando($"CALL p_ModificarUser({Id}, '{Nombre.Text}', '{ApellidoP.Text}', '{ApellidoM.Text}', '{Nacimiento.Value.ToString("yyyy-MM-dd hh:mm:ss")}', '{RFC.Text}', '{NickName.Text}', '{Tipo.Text}', '{Formulario.Text}', '{Sha1(Clave.Text)}')");
+            b.Comando($"CALL p_ModificarUser({Id}, '{Nombre.Text}', '{ApellidoP.Text}', '{ApellidoM.Text}', '{Nacimiento.Value.ToString("yyyy-MM-dd HH:mm:ss")}', '{RFC.Text}', '{NickName.Text}', '{Tipo.Text}', '{Formulario.Text}', '{Sha1(Clave.Text)}');");
             MessageBox.Show("Registro Modificado", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

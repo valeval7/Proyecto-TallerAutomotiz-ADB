@@ -29,7 +29,6 @@ namespace Presentacion_TallerAutomotiz
                 cmbNivel.Text = FrmUsuarios.Tipo;
                 cmbFormulario.Text = FrmUsuarios.Formulario;
                 txtClave.Text = FrmUsuarios.Clave;
-                FrmUsuarios.Id = 0;
             }
 
         }

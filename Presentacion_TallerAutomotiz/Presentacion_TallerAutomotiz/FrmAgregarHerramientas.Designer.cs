@@ -81,7 +81,6 @@
             this.label7.Size = new System.Drawing.Size(471, 50);
             this.label7.TabIndex = 0;
             this.label7.Text = "Codigo de la Herramienta:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtNombre
             // 
@@ -306,7 +305,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmAgregarHerramientas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmAgregarHerramientas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -49,7 +49,7 @@ namespace Presentacion_TallerAutomotiz
             Close();
         }
 
-        private void dtgvAdministrador_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtgvAdministrador_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             fila = e.RowIndex; columna = e.ColumnIndex;
         }

@@ -72,6 +72,7 @@
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(525, 50);
             this.txtClave.TabIndex = 2;
+            this.txtClave.UseSystemPasswordChar = true;
             // 
             // btnIniciar
             // 

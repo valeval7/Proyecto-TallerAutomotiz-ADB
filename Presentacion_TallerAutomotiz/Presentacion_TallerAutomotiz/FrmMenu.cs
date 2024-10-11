@@ -38,6 +38,12 @@ namespace Presentacion_TallerAutomotiz
                 FrmRefacciones a = new FrmRefacciones();
                 a.Show();
             }
+            else if (LOG.Formulario.Equals("Error"))
+            {
+                LOG.Close();
+                this.Show();
+            }
+
             else
             {
                 MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
@@ -57,12 +63,17 @@ namespace Presentacion_TallerAutomotiz
                 a.Show();
                 LOG.Close();
             }
+            else if (LOG.Formulario.Equals("Error")) 
+            {
+                LOG.Close();
+                this.Show();
+            }
+
             else
             {
                 MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
                 LOG.Close();
                 this.Show();
-
             }
         }
 
@@ -77,7 +88,12 @@ namespace Presentacion_TallerAutomotiz
                 FrmUsuarios a = new FrmUsuarios();
                 a.Show();
             }
-            else 
+            else if (LOG.Formulario.Equals("Error"))
+            {
+                LOG.Close();
+                this.Show();
+            }
+            else
             {
                 MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
                 LOG.Close();

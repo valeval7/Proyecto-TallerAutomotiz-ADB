@@ -65,6 +65,7 @@
             this.dtgvAdministrador.Location = new System.Drawing.Point(78, 358);
             this.dtgvAdministrador.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.dtgvAdministrador.Name = "dtgvAdministrador";
+            this.dtgvAdministrador.ReadOnly = true;
             this.dtgvAdministrador.RowHeadersWidth = 82;
             this.dtgvAdministrador.RowTemplate.Height = 33;
             this.dtgvAdministrador.Size = new System.Drawing.Size(1752, 536);

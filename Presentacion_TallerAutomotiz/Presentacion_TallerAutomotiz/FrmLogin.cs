@@ -32,12 +32,6 @@ namespace Presentacion_TallerAutomotiz
                 this.Hide();
                 switch (r)
                 {
-                    case "C0RR3CTO":
-                        {
-                            Formulario = ManejadorLogin.Formulario;
-                            MessageBox.Show("Inicio de sesión, ¡Exitoso!");
-                        }
-                        break;
                     case "ERROR":
                         {
                             DialogResult rs = MessageBox.Show("Incorrecto, ¿Desea intentarlo de nuevo?", "!Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -45,8 +39,12 @@ namespace Presentacion_TallerAutomotiz
                             {
                                 this.Show();
                             }
-                            else
-                                this.Close();
+                            if (rs == DialogResult.No)
+                            {
+                                Formulario = "Error";
+                                Close();
+                            }
+
                         }
                         break;
                 }
@@ -56,6 +54,7 @@ namespace Presentacion_TallerAutomotiz
 
         public void button1_Click_1(object sender, EventArgs e)
         {
+            Formulario = "Error";
             Close();
         }
     }

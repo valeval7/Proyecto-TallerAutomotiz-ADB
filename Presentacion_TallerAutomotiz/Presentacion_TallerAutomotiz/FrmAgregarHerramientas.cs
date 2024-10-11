@@ -24,18 +24,7 @@ namespace Presentacion_TallerAutomotiz
                 txtNombre.Text = FrmHerramientas.Nombre;
                 txtMarca.Text = FrmHerramientas.Marca;
                 txtDescripcion.Text = FrmHerramientas.descripcion;
-                FrmHerramientas.idh = 0;
             }
-        }
-
-        private void FrmAgregarHerramientas_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
