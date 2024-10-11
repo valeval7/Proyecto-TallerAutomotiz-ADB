@@ -39,7 +39,7 @@ SELECT * FROM usuarios;
 INSERT INTO usuarios (IdUsuario, Nombre, apellidopaterno, apellidomaterno, fechanacimiento, rfc, NickName, Tipo, Formulario, Clave) 
 VALUES (NULL, 'Valeria','Macias', 'Gonzalez', '2004-05-07', 'MAGV0705NR5', 'vmg', 1, 4, SHA1('1234'));
 
-
+/*USUARIOS*/
 DELIMITER //
 CREATE PROCEDURE p_ValidarU
 (
@@ -101,7 +101,7 @@ BEGIN
 END;
 //
 
-
+/*HERRAMIENTAS*/
 DELIMITER //
 CREATE PROCEDURE p_ModificarHerramientas
 (
@@ -125,7 +125,6 @@ END;
 //
 
 
-
 DELIMITER //
 CREATE PROCEDURE p_EliminarHerramienta
 (
@@ -137,7 +136,7 @@ END;
 //
 
 
-
+/*REFACCIONES*/
 DELIMITER //
 CREATE PROCEDURE p_ModificarRefacciones
 (
@@ -152,21 +151,34 @@ BEGIN
   SET
   CodigoBarras = _CodigoBarras,
   Nombre = _Nombre, 
-  descricion= _Medida,
-  marca= _Marca
+  Descripcion= _Descripcion,
+  Marca= _Marca
   WHERE IdR = _IdR;
 END;
 //
 
-
-
 DELIMITER //
 CREATE PROCEDURE p_EliminarRefacciones
 (
-   IN _CodigoBarras VARCHAR(50)
+   IN _idR VARCHAR(50)
 )
 BEGIN
-   DELETE FROM Refacciones WHERE CodigoBarras=_CodigoBarras;
+   DELETE FROM Refacciones WHERE idR=_idR;
 END;
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
