@@ -100,6 +100,9 @@ BEGIN
   WHERE _IdUsuario = IdUsuario;
 END;
 //
+CALL p_ModificarUser(1, 'Valeria','Macias', 'Gonzalez', '2004-05-07', 'MAGV0705NR5', 'admin', 1, 4, SHA1('1234'));
+
+
 
 /*HERRAMIENTAS*/
 DELIMITER //

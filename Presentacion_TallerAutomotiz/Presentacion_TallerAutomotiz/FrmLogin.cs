@@ -32,6 +32,12 @@ namespace Presentacion_TallerAutomotiz
                 this.Hide();
                 switch (r)
                 {
+                    case "C0RR3CTO":
+                        {
+                            Formulario = ManejadorLogin.Formulario;
+                        }
+                    break;
+
                     case "ERROR":
                         {
                             DialogResult rs = MessageBox.Show("Incorrecto, ¿Desea intentarlo de nuevo?", "!Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
