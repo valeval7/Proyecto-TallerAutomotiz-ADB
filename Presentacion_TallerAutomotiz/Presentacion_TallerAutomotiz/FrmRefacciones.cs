@@ -72,18 +72,18 @@ namespace Presentacion_TallerAutomotiz
         {
             InitializeComponent();
             MR = new ManejadorRefacciones();
-            string Tipo = ManejadorLogin.Tipo;
-            if (Tipo.Equals("Nivel 1"))
+            string Tipo = ManejadorLogin.Tipo, TipoR = ManejadorLogin.TipoR, TipoH = ManejadorLogin.TipoH;
+            if (Tipo.Equals("Nivel 1") || TipoR.Equals("Nivel 1"))
             {
                 btnAgregar.Visible = true;
                 btnEliminar.Visible = true;
                 btnModificar.Visible = true;
             }
-            else if (Tipo.Equals("Nivel 2"))
+            else if (Tipo.Equals("Nivel 2") || TipoR.Equals("Nivel 2"))
             {
                 btnAgregar.Visible = true;
                 btnEliminar.Visible = false;
-                lblModificar.Visible = false;
+                lblEliminar.Visible = false;
                 btnModificar.Visible = false;
                 lblModificar.Visible = false;
             }

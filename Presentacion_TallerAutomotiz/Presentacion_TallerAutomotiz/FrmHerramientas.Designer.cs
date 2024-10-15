@@ -108,7 +108,6 @@
             this.label7.Text = "Seleccione el REGISTRO si desea eliminar o modificar, y presione el botón corresp" +
     "ondiente.";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // lblEliminar
             // 
@@ -248,7 +247,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmHerramientas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmHerramientas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

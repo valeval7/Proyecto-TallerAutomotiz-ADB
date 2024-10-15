@@ -14,10 +14,17 @@ namespace Presentacion_TallerAutomotiz
 {
     public partial class FrmMenu : Form
     {
+        FrmLogin LOG;
+        string Formulario = "";
+        Form Activo = null;
+
         public FrmMenu()
         {
             InitializeComponent();
             groupBox1.Visible = true;
+            LOG = new FrmLogin();
+            Formulario = ManejadorLogin.Formulario;
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -25,78 +32,69 @@ namespace Presentacion_TallerAutomotiz
             Application.Exit();
         }
 
+        private void CerrarFormulario()
+        {
+            if (Activo != null)
+            {
+               Activo.Close();
+            }
+        }
 
         public void btnRefacciones_Click(object sender, EventArgs e)
         {
+            CerrarFormulario();
             groupBox1.Visible = false;
-            FrmLogin LOG = new FrmLogin();
             
-
-            LOG.ShowDialog();
-            if (LOG.Formulario.Equals("Refacciones") || LOG.Formulario.Equals("Refacciones y Herramientas") || LOG.Formulario.Equals("Administrador"))
+            if (Formulario.Equals("Refacciones") || Formulario.Equals("Refacciones y Herramientas") || Formulario.Equals("Administrador"))
             {
                 FrmRefacciones a = new FrmRefacciones();
                 a.Show();
-            }
-            else if (LOG.Formulario.Equals("Error"))
-            {
-                LOG.Close();
-                this.Show();
-            }
+                Activo = a;
 
+            }
             else
             {
-                MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
-                LOG.Close();
+                MessageBox.Show("ERROR. Usted solo está ASIGNADO a los formularios: \n" + Formulario);
                 this.Show();
             }
+           
         }
 
         public void btnHerramientas_Click(object sender, EventArgs e)
         {
+            CerrarFormulario();
             groupBox1.Visible = false;
-            FrmLogin LOG = new FrmLogin();
-            LOG.ShowDialog();
-            if (LOG.Formulario.Equals("Herramientas") || LOG.Formulario.Equals("Refacciones y Herramientas") || LOG.Formulario.Equals("Administrador"))
+            FrmHerramientas b = new FrmHerramientas();
+            if (Formulario.Equals("Herramientas") || Formulario.Equals("Refacciones y Herramientas") || Formulario.Equals("Administrador"))
             {
-                FrmHerramientas a = new FrmHerramientas();
-                a.Show();
-                LOG.Close();
-            }
-            else if (LOG.Formulario.Equals("Error")) 
-            {
-                LOG.Close();
-                this.Show();
+                b.Show();
+                Activo = b;
             }
 
             else
             {
-                MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
-                LOG.Close();
+                MessageBox.Show("ERROR. Usted solo está ASIGNADO a los formularios: \n" + Formulario);
                 this.Show();
             }
+           
         }
+
+
 
         private void btnAdministrar_Click(object sender, EventArgs e)
         {
+            CerrarFormulario();
             groupBox1.Visible = false;
-            FrmLogin LOG = new FrmLogin();
-            LOG.ShowDialog();
-
-            if (LOG.Formulario.Equals("Administrador"))
+            FrmUsuarios c = new FrmUsuarios();
+            if (Formulario.Equals("Administrador"))
             {
-                FrmUsuarios a = new FrmUsuarios();
-                a.Show();
-            }
-            else if (LOG.Formulario.Equals("Error"))
-            {
-                LOG.Close();
-                this.Show();
+                c.Show();
+                Activo = c;
+                
             }
             else
             {
-                MessageBox.Show("ERROR.Usted solo está ASIGNADO a los formularios: \n" + LOG.Formulario);
-                LOG.Close();
+                MessageBox.Show("ERROR. Usted solo está ASIGNADO a los formularios: \n" + Formulario);
                 this.Show();
             }
         }

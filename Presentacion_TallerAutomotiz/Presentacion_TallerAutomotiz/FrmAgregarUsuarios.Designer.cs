@@ -33,13 +33,14 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbFormulario = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.cmbNivel = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.cmbNivel = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.txtRFC = new System.Windows.Forms.TextBox();
@@ -50,10 +51,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbNivelH = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbNivelR = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -94,18 +99,18 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.cmbFormulario);
             this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.cmbNivel);
+            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txtClave);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtUser);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.cmbNivel);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox2.Location = new System.Drawing.Point(66, 655);
+            this.groupBox2.Location = new System.Drawing.Point(66, 662);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1065, 370);
+            this.groupBox2.Size = new System.Drawing.Size(1468, 370);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de inicio de sesión:";
@@ -119,10 +124,11 @@
             "Herramientas",
             "Refacciones y Herramientas",
             "Administrador"});
-            this.cmbFormulario.Location = new System.Drawing.Point(573, 301);
+            this.cmbFormulario.Location = new System.Drawing.Point(586, 234);
             this.cmbFormulario.Name = "cmbFormulario";
             this.cmbFormulario.Size = new System.Drawing.Size(389, 47);
-            this.cmbFormulario.TabIndex = 9;
+            this.cmbFormulario.TabIndex = 13;
+            this.cmbFormulario.SelectedIndexChanged += new System.EventHandler(this.cmbFormulario_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -130,11 +136,35 @@
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(6, 301);
+            this.label10.Location = new System.Drawing.Point(19, 234);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(544, 50);
-            this.label10.TabIndex = 0;
+            this.label10.TabIndex = 10;
             this.label10.Text = "FOMULARIOS ASIGNADOS:";
+            // 
+            // cmbNivel
+            // 
+            this.cmbNivel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNivel.FormattingEnabled = true;
+            this.cmbNivel.Items.AddRange(new object[] {
+            "Nivel 1",
+            "Nivel 2"});
+            this.cmbNivel.Location = new System.Drawing.Point(272, 323);
+            this.cmbNivel.Name = "cmbNivel";
+            this.cmbNivel.Size = new System.Drawing.Size(389, 47);
+            this.cmbNivel.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(110, 320);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(149, 50);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "NIVEL:";
             // 
             // txtClave
             // 
@@ -176,30 +206,6 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "USERNAME:";
             // 
-            // cmbNivel
-            // 
-            this.cmbNivel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Items.AddRange(new object[] {
-            "Nivel 1",
-            "Nivel 2"});
-            this.cmbNivel.Location = new System.Drawing.Point(272, 227);
-            this.cmbNivel.Name = "cmbNivel";
-            this.cmbNivel.Size = new System.Drawing.Size(389, 47);
-            this.cmbNivel.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(110, 224);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(149, 50);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "NIVEL:";
-            // 
             // groupBox1
             // 
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -218,10 +224,24 @@
             this.groupBox1.ForeColor = System.Drawing.Color.DarkRed;
             this.groupBox1.Location = new System.Drawing.Point(66, 69);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(879, 563);
+            this.groupBox1.Size = new System.Drawing.Size(879, 577);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del usuario:";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.CalendarForeColor = System.Drawing.Color.DarkRed;
+            this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(35, 428);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(6);
+            this.dtpFecha.MaxDate = new System.DateTime(2004, 12, 31, 0, 0, 0, 0);
+            this.dtpFecha.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(320, 47);
+            this.dtpFecha.TabIndex = 7;
+            this.dtpFecha.Value = new System.DateTime(2004, 12, 31, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -229,10 +249,10 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(18, 344);
+            this.label3.Location = new System.Drawing.Point(19, 355);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(493, 50);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 6;
             this.label3.Text = "FECHA DE NACIMIENTO:";
             // 
             // txtApellidoM
@@ -249,7 +269,7 @@
             // txtRFC
             // 
             this.txtRFC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRFC.Location = new System.Drawing.Point(153, 477);
+            this.txtRFC.Location = new System.Drawing.Point(147, 501);
             this.txtRFC.Name = "txtRFC";
             this.txtRFC.Size = new System.Drawing.Size(389, 47);
             this.txtRFC.TabIndex = 5;
@@ -279,7 +299,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(19, 477);
+            this.label5.Location = new System.Drawing.Point(13, 501);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 50);
             this.label5.TabIndex = 0;
@@ -333,32 +353,65 @@
             this.label2.Text = "CANCELAR";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.cmbNivelH);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.cmbNivelR);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Location = new System.Drawing.Point(1082, 701);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(405, 304);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            // 
+            // cmbNivelH
+            // 
+            this.cmbNivelH.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNivelH.FormattingEnabled = true;
+            this.cmbNivelH.Items.AddRange(new object[] {
+            "Nivel 1",
+            "Nivel 2"});
+            this.cmbNivelH.Location = new System.Drawing.Point(6, 238);
+            this.cmbNivelH.Name = "cmbNivelH";
+            this.cmbNivelH.Size = new System.Drawing.Size(389, 47);
+            this.cmbNivelH.TabIndex = 17;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.label12.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(12, 174);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(262, 50);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Herramientas:";
+            // 
+            // cmbNivelR
+            // 
+            this.cmbNivelR.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNivelR.FormattingEnabled = true;
+            this.cmbNivelR.Items.AddRange(new object[] {
+            "Nivel 1",
+            "Nivel 2"});
+            this.cmbNivelR.Location = new System.Drawing.Point(10, 108);
+            this.cmbNivelR.Name = "cmbNivelR";
+            this.cmbNivelR.Size = new System.Drawing.Size(389, 47);
+            this.cmbNivelR.TabIndex = 15;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(1289, 9);
+            this.label11.Location = new System.Drawing.Point(16, 44);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(597, 99);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "NOTA: \r\nNIVEL 1-Lectura, Agregar, Eliminar, Modificar.\r\nNIVEL 2-Lectura, Agregar." +
-    "\r\n";
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(34, 417);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(6);
-            this.dtpFecha.MaxDate = new System.DateTime(2004, 12, 31, 0, 0, 0, 0);
-            this.dtpFecha.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(320, 47);
-            this.dtpFecha.TabIndex = 4;
-            this.dtpFecha.Value = new System.DateTime(2004, 12, 31, 0, 0, 0, 0);
+            this.label11.Size = new System.Drawing.Size(232, 50);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Refacciones:";
             // 
             // FrmAgregarUsuarios
             // 
@@ -369,11 +422,11 @@
             this.BackgroundImage = global::Presentacion_TallerAutomotiz.Properties.Resources._25;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1970, 1250);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
@@ -389,8 +442,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -402,8 +456,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cmbNivel;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.TextBox txtApellidoP;
@@ -414,10 +466,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtApellidoM;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbFormulario;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbNivel;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox cmbNivelH;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbNivelR;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
     }
 }

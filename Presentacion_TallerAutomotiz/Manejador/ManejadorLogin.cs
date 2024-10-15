@@ -13,23 +13,28 @@ namespace Manejador
     public class ManejadorLogin
     {
         Base b = new Base("localhost", "root", "", "BD_TallerAutomotriz");
-        public static string Tipo = "", Formulario="";
+        public static string Tipo = "", TipoR="", TipoH="", Formulario = "";
         public string Validar(TextBox NickName, TextBox Clave)
         {
             DataSet ds = b.Consultar($"call p_validaru('{NickName.Text}', '{Sha1(Clave.Text)}')", "usuarios");
             DataTable dt = ds.Tables[0];
-            
+
             if (dt.Rows[0]["rs"].ToString().Equals("C0rr3cto"))
             {
                 Tipo = dt.Rows[0]["tipo"].ToString();
                 Formulario = dt.Rows[0]["formulario"].ToString();
+                TipoR = dt.Rows[0]["tipor"].ToString();
+                TipoH = dt.Rows[0]["tipoh"].ToString();
                 return dt.Rows[0]["rs"].ToString();
             }
+
             else
             {
                 return "Error";
             }
+
         }
+
 
         public static string Sha1(String texto)
         {
@@ -43,5 +48,7 @@ namespace Manejador
             }
             return cadena.ToString();
         }
+
     }
-}
+    
+ }

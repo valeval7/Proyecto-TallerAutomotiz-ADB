@@ -9,18 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AccesoDatos;
 using Entidades;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using RadioButton = System.Windows.Forms.RadioButton;
 
 namespace Manejador
 {
     public class ManejadorUsuarios
     {
         Base b = new Base("localhost", "root", "", "BD_TallerAutomotriz");
-        
-        public string GuardarUser(TextBox Nombre, TextBox ApellidoP, TextBox ApellidoM, DateTimePicker Nacimiento, TextBox RFC, TextBox NickName, ComboBox Tipo, ComboBox Formulario,  TextBox Clave)
+        public string GuardarUser(TextBox Nombre, TextBox ApellidoP, TextBox ApellidoM, DateTimePicker Nacimiento, TextBox RFC, TextBox NickName, ComboBox Tipo, ComboBox Formulario, ComboBox TipoR, ComboBox TipoH, TextBox Clave)
         {
             try
             {
-                return b.Comando(($"insert into usuarios values (null, '{Nombre.Text}', '{ApellidoP.Text}', '{ApellidoM.Text}', '{Nacimiento.Value.ToString("yyyy-MM-dd hh:mm:ss")}', '{RFC.Text}', '{NickName.Text}', '{Tipo.Text}', '{Formulario.Text}', '{Sha1(Clave.Text)}')"));
+                return b.Comando($"INSERT INTO Usuarios (idusuario, Nombre, apellidopaterno, apellidomaterno, fechanacimiento, rfc, NickName, Tipo, Formulario, TipoRefacciones, TipoHerramientas, Clave) " +
+                $"VALUES (null, '{Nombre.Text}', '{ApellidoP.Text}', '{ApellidoM.Text}', '{Nacimiento.Value.ToString("yyyy-MM-dd HH:mm:ss")}', '{RFC.Text}', '{NickName.Text}', " +
+                $"'{Tipo.SelectedItem}', '{Formulario.Text}', '{TipoR.SelectedItem}', '{TipoH.SelectedItem}', '{Sha1(Clave.Text)}')");
             }
             catch (Exception)
             {
@@ -37,11 +40,13 @@ namespace Manejador
             Tabla.AutoResizeRows();
         }
 
-        public void Modificar(int Id, TextBox Nombre, TextBox ApellidoP, TextBox ApellidoM, DateTimePicker Nacimiento, TextBox RFC, TextBox NickName, ComboBox Tipo, ComboBox Formulario, TextBox Clave)
+        public void Modificar(int Id, TextBox Nombre, TextBox ApellidoP, TextBox ApellidoM, DateTimePicker Nacimiento, TextBox RFC, TextBox NickName, ComboBox Tipo, ComboBox Formulario, ComboBox TipoR, ComboBox TipoH, TextBox Clave)
         {
-            b.Comando($"CALL p_ModificarUser({Id}, '{Nombre.Text}', '{ApellidoP.Text}', '{ApellidoM.Text}', '{Nacimiento.Value.ToString("yyyy-MM-dd HH:mm:ss")}', '{RFC.Text}', '{NickName.Text}', '{Tipo.Text}', '{Formulario.Text}', '{Sha1(Clave.Text)}');");
+            b.Comando($"CALL p_ModificarUser({Id}, '{Nombre.Text}', '{ApellidoP.Text}', '{ApellidoM.Text}', '{Nacimiento.Value.ToString("yyyy-MM-dd HH:mm:ss")}', '{RFC.Text}', '{NickName.Text}', " +
+                       $"'{Tipo.SelectedItem}', '{Formulario.Text}', {(string.IsNullOrWhiteSpace(Clave.Text) ? "NULL" : $"'{Sha1(Clave.Text)}'")});");
             MessageBox.Show("Registro Modificado", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
 
         public void Eliminar(int Id, string Dato)
         {

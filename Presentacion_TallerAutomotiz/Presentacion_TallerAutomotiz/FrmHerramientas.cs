@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 using Manejador;
 
 namespace Presentacion_TallerAutomotiz
@@ -41,11 +42,6 @@ namespace Presentacion_TallerAutomotiz
         {
             dtgvAdministrador.Visible = true;
             MK.MostrarHerramientas(dtgvAdministrador, txtBuscar.Text);
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -83,14 +79,14 @@ namespace Presentacion_TallerAutomotiz
         {
             InitializeComponent();
             MK= new ManejadorHerramientas();
-            string Tipo = ManejadorLogin.Tipo;
-            if (Tipo.Equals("Nivel 1"))
+            string Tipo = ManejadorLogin.Tipo, TipoR = ManejadorLogin.TipoR, TipoH = ManejadorLogin.TipoH;
+            if (Tipo.Equals("Nivel 1") ||  TipoH.Equals("Nivel 1"))
             {
                 btnAgregar.Visible = true;
                 btnEliminar.Visible = true;
                 btnModificar.Visible = true;
             }
-            else if (Tipo.Equals("Nivel 2"))
+            else if (Tipo.Equals("Nivel 2") || TipoH.Equals("Nivel 2"))
             {
                 btnAgregar.Visible = true;
                 btnEliminar.Visible = false;
@@ -98,11 +94,8 @@ namespace Presentacion_TallerAutomotiz
                 btnModificar.Visible = false;
                 lblModificar.Visible = false;
             }
-        }
-
-        private void FrmHerramientas_Load(object sender, EventArgs e)
-        {
 
         }
+
     }
 }

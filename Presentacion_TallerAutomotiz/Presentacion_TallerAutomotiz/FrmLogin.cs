@@ -14,7 +14,6 @@ namespace Presentacion_TallerAutomotiz
     public partial class FrmLogin : Form
     {
         ManejadorLogin ml;
-        public string Formulario = "";
         public FrmLogin()
         {
             InitializeComponent();
@@ -34,7 +33,8 @@ namespace Presentacion_TallerAutomotiz
                 {
                     case "C0RR3CTO":
                         {
-                            Formulario = ManejadorLogin.Formulario;
+                            FrmMenu fm = new FrmMenu();
+                            fm.Show();
                         }
                     break;
 
@@ -45,12 +45,6 @@ namespace Presentacion_TallerAutomotiz
                             {
                                 this.Show();
                             }
-                            if (rs == DialogResult.No)
-                            {
-                                Formulario = "Error";
-                                Close();
-                            }
-
                         }
                         break;
                 }
@@ -60,8 +54,7 @@ namespace Presentacion_TallerAutomotiz
 
         public void button1_Click_1(object sender, EventArgs e)
         {
-            Formulario = "Error";
-            Close();
+            Application.Exit();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Presentacion_TallerAutomotiz
         ManejadorUsuarios MM;
         int fila = 0, columna = 0;
         public static int Id = 0;
-        public static string Nombre = "", ApellidoP = "", ApellidoM = "", RFC="", NickName = "", Tipo = "", Formulario="", Clave = "";
+        public static string Nombre = "", ApellidoP = "", ApellidoM = "", RFC="", NickName = "", Tipo = "", Formulario="", TipoR="", TipoH="",Clave = "";
 
         public static DateTime Nacimiento = new DateTime();
 
@@ -25,8 +25,9 @@ namespace Presentacion_TallerAutomotiz
         {
             InitializeComponent();
             MM = new ManejadorUsuarios();
-            string Tipo = ManejadorLogin.Tipo;
-            if(Tipo.Equals("Nivel 1"))
+            string Tipo = ManejadorLogin.Tipo , TipoR= ManejadorLogin.TipoR, TipoH = ManejadorLogin.TipoH;
+
+            if(Tipo.Equals("Nivel 1" ))
             {
                 btnAgregar.Visible = true;
                 btnEliminar.Visible = true;
@@ -40,8 +41,6 @@ namespace Presentacion_TallerAutomotiz
                 btnModificar.Visible = false;
                 lblModificar.Visible = false;
             }
-
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -74,7 +73,9 @@ namespace Presentacion_TallerAutomotiz
                 NickName = dtgvAdministrador.Rows[fila].Cells[6].Value.ToString();
                 Tipo = dtgvAdministrador.Rows[fila].Cells[7].Value.ToString();
                 Formulario = dtgvAdministrador.Rows[fila].Cells[8].Value.ToString();
-                Clave = dtgvAdministrador.Rows[fila].Cells[9].Value.ToString();
+                TipoR= dtgvAdministrador.Rows[fila].Cells[9].Value.ToString();
+                TipoH = dtgvAdministrador.Rows[fila].Cells[10].Value.ToString();
+                Clave = dtgvAdministrador.Rows[fila].Cells[11].Value.ToString();
                 FrmAgregarUsuarios dm = new FrmAgregarUsuarios();
                 dm.ShowDialog();
                 Limpiar();

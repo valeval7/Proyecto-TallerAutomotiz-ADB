@@ -30,18 +30,23 @@ apellidomaterno VARCHAR(100),
 fechanacimiento DATETIME,
 rfc VARCHAR(11),
 NickName VARCHAR(50),
-Tipo ENUM('Nivel 1', 'Nivel 2'),
+Tipo ENUM('Nivel 1', 'Nivel 2') NULL,
 Formulario ENUM('Refacciones','Herramientas', 'Refacciones y Herramientas', 'Administrador'),
+TipoRefacciones ENUM('Nivel 1', 'Nivel 2') NULL,
+TipoHerramientas ENUM('Nivel 1', 'Nivel 2') NULL,
 Clave VARCHAR(255)
 );
-SELECT * FROM usuarios;
+
+
 
 INSERT INTO usuarios (IdUsuario, Nombre, apellidopaterno, apellidomaterno, fechanacimiento, rfc, NickName, Tipo, Formulario, Clave) 
 VALUES (NULL, 'Valeria','Macias', 'Gonzalez', '2004-05-07', 'MAGV0705NR5', 'vmg', 1, 4, SHA1('1234'));
 
+
+
 /*USUARIOS*/
 DELIMITER //
-CREATE PROCEDURE p_ValidarU
+CREATE proCEDURE p_ValidarU
 (
    IN _NickName VARCHAR(50), 
    IN _Clave VARCHAR(255)
@@ -51,15 +56,15 @@ BEGIN
     SELECT COUNT(*) FROM Usuarios WHERE NickName=_NickName  AND Clave=_Clave INTO x;
     if X>0 then
     SELECT 'C0rr3cto' AS rs , (SELECT Tipo FROM Usuarios WHERE NickName=_NickName AND Clave=_Clave) AS tipo,
-	 (SELECT Formulario FROM Usuarios WHERE NickName=_NickName AND Clave=_Clave) AS formulario;
-	 
+	 (SELECT Formulario FROM Usuarios WHERE NickName=_NickName AND Clave=_Clave) AS formulario,
+	 (SELECT TipoRefacciones FROM Usuarios WHERE NickName=_NickName AND Clave=_Clave) AS tipor,
+	 (SELECT TipoHerramientas FROM Usuarios WHERE NickName=_NickName AND Clave=_Clave) AS tipoh;
     ELSE
     SELECT 'Error' AS rs, 0 AS Tipo;
     END if;
 END // 
 DELIMITER ;
 CALL p_ValidarU('vmg', SHA1('1234'));
-
 
 DELIMITER //
 CREATE PROCEDURE p_EliminarUser
@@ -137,7 +142,6 @@ BEGIN
    DELETE FROM herramientas WHERE idH=_IdH;
 END;
 //
-
 
 /*REFACCIONES*/
 DELIMITER //

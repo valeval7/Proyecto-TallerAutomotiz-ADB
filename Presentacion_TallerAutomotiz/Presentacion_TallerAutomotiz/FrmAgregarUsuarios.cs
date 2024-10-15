@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 using Manejador;
 
 namespace Presentacion_TallerAutomotiz
@@ -18,6 +19,19 @@ namespace Presentacion_TallerAutomotiz
         {
             InitializeComponent();
             mu = new ManejadorUsuarios();
+            if (cmbFormulario.Equals("Refacciones") || cmbFormulario.Equals("Herramientas") || cmbFormulario.Equals("Administrador"))
+            {
+                cmbNivel.Visible = true;
+                label9.Visible = true;
+                groupBox3.Visible = false;
+            }
+            else if (cmbFormulario.Equals("Refacciones y Herramientas"))
+            {
+                cmbNivel.Visible = false;
+                label9.Visible = false;
+                groupBox3.Visible = true;
+            }
+
             if (FrmUsuarios.Id > 0)
             {
                 txtNombre.Text = FrmUsuarios.Nombre;
@@ -28,9 +42,15 @@ namespace Presentacion_TallerAutomotiz
                 txtUser.Text = FrmUsuarios.NickName;
                 cmbNivel.Text = FrmUsuarios.Tipo;
                 cmbFormulario.Text = FrmUsuarios.Formulario;
+                cmbNivelR.Text = FrmUsuarios.Tipo;
+                cmbNivelH.Text = FrmUsuarios.Tipo;
                 txtClave.Text = FrmUsuarios.Clave;
             }
 
+            cmbNivel.Visible = false;
+            label9.Visible = false;
+            groupBox3.Visible = false;
+            cmbFormulario.SelectionChangeCommitted += new EventHandler(cmbFormulario_SelectedIndexChanged);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -38,7 +58,7 @@ namespace Presentacion_TallerAutomotiz
             if (FrmUsuarios.Id > 0)
             {
                 mu.Modificar(FrmUsuarios.Id,txtNombre, txtApellidoP, txtApellidoM, dtpFecha, txtRFC,
-                txtUser, cmbNivel, cmbFormulario, txtClave);
+                txtUser, cmbNivel, cmbFormulario, cmbNivelR, cmbNivelH,txtClave);
                 FrmUsuarios.Id = 0;
                 txtNombre.Clear();
                 txtApellidoP.Clear();
@@ -49,7 +69,7 @@ namespace Presentacion_TallerAutomotiz
             }
             else
             MessageBox.Show(mu.GuardarUser(txtNombre, txtApellidoP, txtApellidoM, dtpFecha, txtRFC,
-                txtUser, cmbNivel, cmbFormulario, txtClave));
+                txtUser, cmbNivel, cmbFormulario, cmbNivelR, cmbNivelH, txtClave));
             txtNombre.Clear();
             txtApellidoP.Clear();
             txtApellidoM.Clear();
@@ -73,6 +93,30 @@ namespace Presentacion_TallerAutomotiz
         {
             txtApellidoM.Clear();
             txtApellidoM.ForeColor = Color.Black;
+        }
+
+        private void cmbFormulario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedValue = cmbFormulario.Text;
+
+            if (selectedValue == "Refacciones" || selectedValue == "Herramientas" || selectedValue == "Administrador")
+            {
+                cmbNivel.Visible = true;
+                label9.Visible = true;
+                groupBox3.Visible = false;
+            }
+            else if (selectedValue == "Refacciones y Herramientas")
+            {
+                cmbNivel.Visible = false;
+                label9.Visible = false;
+                groupBox3.Visible = true;
+            }
+            else
+            {
+                cmbNivel.Visible = false;
+                label9.Visible = false;
+                groupBox3.Visible = false;
+            }
         }
     }
 }
