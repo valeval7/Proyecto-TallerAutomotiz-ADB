@@ -30,18 +30,17 @@ apellidomaterno VARCHAR(100),
 fechanacimiento DATETIME,
 rfc VARCHAR(11),
 NickName VARCHAR(50),
-Tipo ENUM('Nivel 1', 'Nivel 2') NULL,
+Tipo VARCHAR(10) NULL,
 Formulario ENUM('Refacciones','Herramientas', 'Refacciones y Herramientas', 'Administrador'),
-TipoRefacciones ENUM('Nivel 1', 'Nivel 2') NULL,
-TipoHerramientas ENUM('Nivel 1', 'Nivel 2') NULL,
+TipoRefacciones VARCHAR(10) NULL,
+TipoHerramientas VARCHAR(10) NULL,
 Clave VARCHAR(255)
 );
 
 
 
 INSERT INTO usuarios (IdUsuario, Nombre, apellidopaterno, apellidomaterno, fechanacimiento, rfc, NickName, Tipo, Formulario, Clave) 
-VALUES (NULL, 'Valeria','Macias', 'Gonzalez', '2004-05-07', 'MAGV0705NR5', 'vmg', 1, 4, SHA1('1234'));
-
+VALUES (NULL, 'Valeria','Macias', 'Gonzalez', '2004-05-07', 'MAGV0705NR5', 'vmg', 'Nivel 1', 4, SHA1('1234'));
 
 
 /*USUARIOS*/
